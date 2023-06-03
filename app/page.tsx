@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import { DatePickerWithRange } from "@/components/DatePickerWithRange"
+import { ToastSimple } from "@/components/ToastDemo"
 
 export default function IndexPage() {
   return (
@@ -18,6 +19,8 @@ export default function IndexPage() {
         </Avatar>
 
         <DatePickerWithRange />
+
+        <ToastSimple />
       </div>
       <div className="flex gap-4">
         <Link
