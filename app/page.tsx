@@ -1,6 +1,8 @@
+import Image from "next/image"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import { DatePickerWithRange } from "@/components/DatePickerWithRange"
@@ -21,6 +23,17 @@ export default function IndexPage() {
         <DatePickerWithRange />
 
         <ToastSimple />
+
+        <div className="w-[450px]">
+          <AspectRatio ratio={1 / 1}>
+            <Image
+              src="https://avatars.githubusercontent.com/u/17794897?v=4"
+              alt="Avatar"
+              fill
+              className="rounded-md"
+            />
+          </AspectRatio>
+        </div>
       </div>
       <div className="flex gap-4">
         <Link
