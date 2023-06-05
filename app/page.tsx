@@ -6,6 +6,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import { DatePickerWithRange } from "@/components/DatePickerWithRange"
+import { ProgressDemo } from "@/components/ProgressDemo"
 import { ToastSimple } from "@/components/ToastDemo"
 
 export default function IndexPage() {
@@ -23,6 +24,8 @@ export default function IndexPage() {
         <DatePickerWithRange />
 
         <ToastSimple />
+
+        <ProgressDemo />
 
         <div className="w-[450px]">
           <AspectRatio ratio={1 / 1}>
